@@ -75,7 +75,7 @@
  * THERMAL_PROTECTION_HYSTERESIS and/or THERMAL_PROTECTION_PERIOD
  */
 #if ENABLED(THERMAL_PROTECTION_HOTENDS)
-  #define THERMAL_PROTECTION_PERIOD 40        // Seconds
+  #define THERMAL_PROTECTION_PERIOD 90        // Seconds
   #define THERMAL_PROTECTION_HYSTERESIS 4     // Degrees Celsius
 
   /**
@@ -583,7 +583,7 @@
 // @section lcd
 
 // Include a page of printer information in the LCD Main Menu
-//#define LCD_INFO_MENU
+#define LCD_INFO_MENU
 
 // Scroll a longer status message into view
 //#define STATUS_MESSAGE_SCROLLING
@@ -697,10 +697,10 @@
   #endif
 
   // This allows hosts to request long names for files and folders with M33
-  //#define LONG_FILENAME_HOST_SUPPORT
+  #define LONG_FILENAME_HOST_SUPPORT
 
   // Enable this option to scroll long filenames in the SD card menu
-  //#define SCROLL_LONG_FILENAMES
+  #define SCROLL_LONG_FILENAMES
 
   /**
    * This option allows you to abort SD printing when any endstop is triggered.
@@ -1494,12 +1494,12 @@
 /**
  * Auto-report temperatures with M155 S<seconds>
  */
-#define AUTO_REPORT_TEMPERATURES
+//#define AUTO_REPORT_TEMPERATURES
 
 /**
  * Include capabilities in M115 output
  */
-#define EXTENDED_CAPABILITIES_REPORT
+//#define EXTENDED_CAPABILITIES_REPORT
 
 /**
  * Disable all Volumetric extrusion options
