@@ -136,7 +136,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "Pegasus 10"
+#define CUSTOM_MACHINE_NAME "iLude 0.4.0"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -379,10 +379,20 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
+  // Makerfarm Pegasus 10 - 200 degrees
+  #define DEFAULT_Kp 64.42
+  #define DEFAULT_Ki 10.21
+  #define DEFAULT_Kd 101.59
+
+  // Makerfarm Pegasus 10 - 240 degrees
+  //#define DEFAULT_Kp 55.51
+  //#define DEFAULT_Ki 8.58
+  //#define DEFAULT_Kd 89.81
+
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+  //#define DEFAULT_Kp 22.2
+  //#define DEFAULT_Ki 1.08
+  //#define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -1253,12 +1263,12 @@
 // @section temperature
 
 // Preheat Constants
-#define PREHEAT_1_TEMP_HOTEND 210
+#define PREHEAT_1_TEMP_HOTEND 200
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_TEMP_HOTEND 250
-#define PREHEAT_2_TEMP_BED    110
+#define PREHEAT_2_TEMP_HOTEND 240
+#define PREHEAT_2_TEMP_BED    100
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
